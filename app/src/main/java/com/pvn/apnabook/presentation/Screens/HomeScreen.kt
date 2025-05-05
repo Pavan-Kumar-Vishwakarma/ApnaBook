@@ -34,6 +34,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalUriHandler
@@ -68,8 +69,9 @@ fun HomeScreen(navHostController: NavHostController) {
                         .padding(16.dp)
                 ) {
                     Icon(painter = painterResource(
-                        id = R.drawable.ic_launcher_background),
+                        id = R.drawable.app_icon),
                         contentDescription = "App Logo",
+                        tint = Color.Unspecified,
                         modifier = Modifier.size(100.dp)
                             .align(Alignment.CenterHorizontally)
                     )
